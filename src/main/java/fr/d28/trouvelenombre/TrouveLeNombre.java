@@ -2,11 +2,7 @@ package fr.d28.trouvelenombre;
 
 import fr.d28.trouvelenombre.commands.CommandTrouveLeNombre;
 import fr.d28.trouvelenombre.events.ChatEvent;
-import fr.d28.trouvelenombre.events.JoinEvent;
 import fr.d28.trouvelenombre.objects.GameTLN;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
@@ -28,7 +24,6 @@ public final class TrouveLeNombre extends JavaPlugin {
         gameTLN = new GameTLN();
         //met un message de lancement
         getLogger().info("TrouveLeNombre is now enabled");
-        getServer().getPluginManager().registerEvents(new JoinEvent(),this);
         getServer().getPluginManager().registerEvents(new ChatEvent(this),this);
         getCommand("trouvelenombre").setExecutor(new CommandTrouveLeNombre(this));
 

@@ -22,7 +22,7 @@ public class CommandTrouveLeNombre implements CommandExecutor {
                 Player player = (Player) sender;
 
                 if(!player.hasPermission("trouvelenombre.start")){
-                    player.sendMessage("Tu n'as pas la perm connard !");
+                    player.sendMessage("§cTu n'as pas la permission !");
                     return false;
                 }
 
