@@ -1,0 +1,13 @@
+name: TrouveLeNombre
+version: '${project.version}'
+main: fr.d28.trouvelenombre.TrouveLeNombre
+authors: [ 28d, Alexandre01 ]
+description: TrouveLeNombre est un jeu ou quand tu fait une commande ça lance un jeu de devinette.
+commands:
+  trouvelenombre:
+    aliases:
+      - tln
+      - tlnb
+      - tlnombre
+    usage: /trouvelenombre
+    description: Trouve le nombre
